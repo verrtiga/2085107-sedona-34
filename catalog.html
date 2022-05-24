@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title> Гостиницы </title>
   </head>
   <body>
   <header class="page-header">
@@ -38,5 +38,75 @@
    </ul>
     </nav> 
   </header>
+
+  <main class="main-catalog">
+  <header class="catalog-header">
+  <h1 class="catalog-title"> Гостиницы Седоны </h1>
+  <ul class="breadcrumbs"> 
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="index.html"> 
+        <img class="breacrumbs-logo-index" src="#">
+      </a>
+    </li>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link"> Гостиницы </a>
+    </li>
+  </ul>
+  </header>
+
+  <section class="catalog-hotels"> 
+  <h2 class="visually-hidden"> Список гостиниц с фильтрами </h2>
+  <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+    <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title"> Инфраструктура </legend>
+        <ul class="catalog-filter-list">
+          <li class="catalog-filter-item">
+      <label class="catalog-filter-label">
+      <input class="catalog-filter-input" type="checkbox" name="swimming" checked>
+      Бассейн
+      </label>
+          </li>
+          <li class="catalog-filter-item">
+          <label class="catalog-filter-label">
+        <input class="catalog-filter-input" type="checkbox" name="parking" checked>
+        Парковка
+        </label>
+          </li>
+          <li class="catalog-filter-item">
+        <label class="catalog-filter-label">
+          <input class="catalog-filter-input" type="checkbox" name="wi-fi">
+          Wi-Fi
+          </label>
+          </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title"> Тип Жилья </legend>
+      <ul class="catalog-filter-list">
+        <li class="catalog-filter-item">
+          <label class="catalog-filter-label">
+            <input class="catalog-filter-input" type="radio" name="place" value="Гостиница" checked>
+            Гостиница
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="catalog-filter-label">
+            <input class="catalog-filter-input" type="radio" name="place" value="Мотель">
+            Мотель
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="catalog-filter-label">
+            <input class="catalog-filter-input" type="radio" name="place" value="Апартаменты">
+            Апартаменты
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    
+  </form> 
+  </section>
+  </main>
   </body>
   </html>
