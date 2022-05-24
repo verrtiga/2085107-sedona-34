@@ -104,7 +104,18 @@
         </li>
       </ul>
     </fieldset>
-    
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+      <label class="visually-hidden"> Стоимость от нуля рублей до девяти тысяч
+      <input class="catalog-filter-value" type="number" min="0" name="from" placeholder="0 от">
+    </label>
+      <input class="catalog-filter-value" type="number" max="9000" name="to" placeholder="9000 до">
+      <input class="catalog-filter-range" type="range" min="0" max="9000" name="value">
+    </fieldset>
+    <fieldset class="catalog-filter-group">
+    <button class="button" type="submit">Применить</button>
+    <input class="catalog-filter-reset" type="reset">
+    </fieldset>
   </form> 
   </section>
   </main>
