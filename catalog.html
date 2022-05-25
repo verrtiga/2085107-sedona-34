@@ -116,7 +116,7 @@
     <button class="button" type="submit">Применить</button>
     <button class="catalog-filter-reset" type="reset"> Cбросить </button>
     </fieldset>
-    <b class="cataloge-title"> Найдено гостиниц: 38</b>
+    <p class="cataloge-title"> Найдено гостиниц: 38</p>
 <select class="cataloge-select" aria-label="Сортировка">
   <option value="cheap"> Сначала дешевые </option>
   <option value="popular"> Сначала популярные </option>
@@ -129,7 +129,115 @@
   <span class="visually-hidden"> Показать карточки </span>
 </a>
   </form> 
+<ul class="hotel-card-list">
+  <li class="hotel-card-item">
+  <div class="hotel-card">
+  <a class="hotel-card-link" href="#">
+    <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
+    <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+  </a>
+  <b class="hotel-card-price"> Гостиница От 4000 ₽  </b>
+  <a class="hotel-card-button-more button" href="#"> Подробнее </a>
+  <a class="hotel-card-button-like button" href="#"> В избранное </a>
+</div>
+</li>
+<li class="hotel-card-item">
+  <div class="hotel-card">
+  <a class="hotel-card-link" href="#">
+    <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo">
+    <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+  </a>
+  <b class="hotel-card-price"> Гостиница  От 5000 ₽  </b>
+  <a class="hotel-card-button-more button" href="#"> Подробнее </a>
+  <a class="hotel-card-button-like button" href="#"> В избранное </a>
+</div>
+</li>
+<li class="hotel-card-item">
+  <div class="hotel-card">
+  <a class="hotel-card-link" href="#">
+    <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
+    <h3 class="hotel-card-title">Desert Quail Inn</h3>
+  </a>
+  <b class="hotel-card-price"> Гостиница  От 2500 ₽  </b>
+  <a class="hotel-card-button-more button" href="#"> Подробнее </a>
+  <a class="hotel-card-button-like button" href="#"> В избранное </a>
+</div>
+</li>
+<li class="hotel-card-item">
+  <div class="hotel-card">
+  <a class="hotel-card-link" href="#">
+    <img class="hotel-card-image" src="#" alt="GreenTree Inn">
+    <h3 class="hotel-card-title">GreenTree Inn</h3>
+  </a>
+  <b class="hotel-card-price"> Гостиница  От 1500 ₽  </b>
+  <a class="hotel-card-button-more button" href="#"> Подробнее </a>
+  <a class="hotel-card-button-like button" href="#"> В избранное </a>
+</div>
+</li>
+</ul>
+<ul class="pagination">
+  <li class="pagination-item">
+<a class="pagination-link" href="#"> 1 </a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#"> 2 </a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#"> 3 </a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#"> 4 </a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#"> ... </a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#"> 10 </a>
+  </li>
+</ul>
+<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+  <p class="catalof-title"> Гостиниц на странице: </p>
+  <select class="cataloge-select" aria-label="Сортировка">
+    <option value="first"> 1 </option>
+    <option value="second"> 2 </option>
+    <option value="third"> 3 </option>
+    <option value="fourth"> 4 </option>
+  </select>
+</form>
 </section>
+<article class="submit-catalog"> 
+  <h2 class="submit-title"> <label for="email">Подпишитесь на рассылку </label> </h2>
+<p class="submit-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+<form class ="submit-form" action="https://echo.htmlacademy.ru/" method="get">
+  <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+  <button class="submit-button"> Подписаться </button>
+</form>
+</article>
+<footer class="page-footer"> 
+  <ul class="footer-socials-list">
+    <li class="footer-social-item">
+      <a class="button" href="https://vk.com/htmlacademy">
+        <span class="visually-hidden"> Вконтакте </span>
+      </a>
+    </li>
+    <li class="footer-social-item">
+      <a class="button" href="https://t.me/htmlacademy ">
+        <span class="visually-hidden"> Телеграм </span>
+      </a>
+    </li>
+    <li class="footer-social-item">
+      <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+        <span class="visually-hidden"> Ютуб </span>
+      </a>
+    </li>
+  </ul>
+  <a class="footer-number-button" href="tel:+78128121212"> 
+    <b class="footer-number-title"> +7 (812) 812-12-12 </b> 
+  </a>
+  <a class="footer-logo-button" href="https://htmlacademy.ru/">
+    <span class="visually-hidden">Логотип HTML Академии</span> 
+  </a>
+  </footer>
 
   </main>
   </body>
