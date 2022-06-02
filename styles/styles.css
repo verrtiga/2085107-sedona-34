@@ -1,0 +1,56 @@
+@font-face {
+    font-family:"PT Sans" ;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family:"PT Sans" ;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "PT Sans" sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    background-color:white;
+    color:black;
+}
+.page-header {
+    background-color: white;
+    color:#000000;
+}
+.navigation-list {
+line-height: 26px;
+color: black;
+background-color: white;
+font-weight: 700;
+text-align: center;
+text-decoration: none;
+}
+.main-index {
+    background-image: url("../images/index-background.jpg");
+    background-color: white;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.discription-sedona {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+.discription-sedona-little {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+}
