@@ -13,7 +13,7 @@
 font-display: swap;
 }
 body {
-font-family: "PT Sans" sans-serif;
+font-family: "PT Sans";
 font-size: 18px;
 line-height: 21px;
 font-weight: 400;
@@ -29,7 +29,9 @@ text-decoration: none;
 background-color: #756157;
 color: white;
 }
-
+.button-catalog {
+    color:#82B3D3;
+}
 .page-header {
     background-color: white;
     color:#000000;
@@ -129,5 +131,86 @@ text-transform: uppercase;
 text-decoration:none;
 color:#000000;
 }
+.main-catalog {
+background-image: url(../images/background-catalog.jpg);
+background-repeat:no-repeat;
+background-size: 100% auto;
+width: 1200px;
+height: 411px;
+color:white;
+}
+.catalog-title {
+ font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+}
+.breadcrumbs-item {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+}
 
-
+.catalog-filter-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+text-transform: capitalize;
+}
+.catalog-filter-label {
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+.catalog-title-match {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color:#000000;
+    text-transform: uppercase;   
+}
+.hotel-card-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: black;
+}
+.hotel-card-link {
+text-decoration: none;
+}
+.hotel-card-price {
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
+.hotel-card-button-like {
+color: white;
+background-color: #82B3D3;
+}
+.hotel-card-button-liked {
+background-color: #7DB54F;
+}
+.pagination {
+ font-weight: 700;
+font-size: 20px;
+ line-height: 36px;
+text-transform: uppercase;
+color:white;
+}
+.pagination-link {
+    text-decoration: none;
+}
+.submit-title-cataloge {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color:#000000;
+}
+.submit-description-cataloge{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color:#000000;
+}
