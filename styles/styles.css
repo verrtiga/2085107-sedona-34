@@ -82,6 +82,17 @@ font-size: 18px;
 line-height: 21px;
 color:#000000;
 }
+.first-item {
+    background-color: #82B3D3;
+}
+.advantages-now-white {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
 .interesting-title {
 font-weight: 700;
 font-size: 30px;
