@@ -10,47 +10,124 @@
     font-style: normal;
     font-weight: 700;
     src: url(../fonts/ptsans-700.woff2) format("woff2");
-    font-display: swap;
+font-display: swap;
 }
 body {
-    font-family: "PT Sans" sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    background-color:white;
-    color:black;
+font-family: "PT Sans" sans-serif;
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+background-color:white;
+color:black;
 }
+.button {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+text-decoration: none;
+background-color: #756157;
+color: white;
+}
+
 .page-header {
     background-color: white;
     color:#000000;
 }
 .navigation-list {
 line-height: 26px;
+font-size: 20px;
 color: black;
 background-color: white;
 font-weight: 700;
-text-align: center;
 text-decoration: none;
 }
-.main-index {
-    background-image: url("../images/index-background.jpg");
-    background-color: white;
-    color: #000000;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+
+.index-background {
+background-image: url("../images/index-background.jpg");
+background-color: white;
+color: #000000;
+background-repeat: no-repeat;
+background-size: 100% auto;
+width: 1200px;
+height: 485px;
 }
+
 .discription-sedona {
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
-text-align: center;
 text-transform: uppercase;
 color: #000000;
 }
-.discription-sedona-little {
+.discription-sedona-litle {
 font-weight: 400;
 font-size: 22px;
 line-height: 26px;
-text-align: center;
 color: #000000;
 }
+.advantages-title {
+font-weight: 700;
+ font-size: 24px;
+ line-height: 28px;
+ text-transform: uppercase;
+ color: #000000;
+}
+
+.advantages-description {
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color:#000000;
+}
+.interesting-title {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+.interesting-description {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+}
+.interesting-button {
+text-decoration: none;
+}
+.submit {
+background-image: url(../images/background-submit.jpg);
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-color: #000000;
+width: 1200px;
+height: 411px;
+}
+.submit-title {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+color:white;
+text-transform: uppercase;
+}
+.submit-description {
+ font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: white;
+}
+.submit-button {
+background-color:#82B3D3;
+color: white;
+}
+.footer-number-button {
+ font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-transform: uppercase;
+text-decoration:none;
+color:#000000;
+}
+
+
