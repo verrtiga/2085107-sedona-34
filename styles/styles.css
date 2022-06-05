@@ -1,233 +1,312 @@
 @font-face {
-    font-family:"PT Sans" ;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/ptsans-400.woff2) format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
 }
+
 @font-face {
-    font-family:"PT Sans" ;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../fonts/ptsans-700.woff2) format("woff2");
-font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
 }
+
 body {
-font-family: "PT Sans" sans-serif;
-font-size: 18px;
-line-height: 21px;
-font-weight: 400;
-background-color:white;
-color:black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: white;
+  color: black;
 }
+
 .button {
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-text-decoration: none;
-background-color: #756157;
-color: white;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  color: white;
 }
+
 .button-catalog {
-    color:#82B3D3;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
+
 .page-header {
-    background-color: white;
-    color:#000000;
+  background-color: white;
+  color: #000000;
 }
+
 .navigation-list {
-line-height: 26px;
-font-size: 20px;
-color: black;
-background-color: white;
-font-weight: 700;
-text-decoration: none;
+  line-height: 26px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .index-background {
-background-image: url("../images/index-background.jpg");
-background-color: white;
-color: #000000;
-background-repeat: no-repeat;
-background-size: 100% auto;
-width: 1200px;
-height: 485px;
+  background-image: url("../images/index-background.jpg");
+  background-color: white;
+  color: #000000;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  min-height: 485px;
 }
 
 .discription-sedona {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
+
 .discription-sedona-litle {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
+
 .advantages-title {
-font-weight: 700;
- font-size: 24px;
- line-height: 28px;
- text-transform: uppercase;
- color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .advantages-description {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color:#333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
+
 .first-item {
-    background-color: #82B3D3;
+  background-color: #82B3D3;
 }
+
 .advantages-now-white {
-    background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-road {
-    background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .interesting-title {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
+
 .interesting-description {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
+
 .interesting-button {
-text-decoration: none;
+  text-decoration: none;
 }
+
 .submit {
-background-image: url(../images/background-submit.jpg);
-background-repeat: no-repeat;
-background-size: 100% auto;
-background-color: #FFFFFF;
-width: 1200px;
-height: 411px;
+  background-image: url(../images/background-submit.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #FFFFFF;
+  width: 1200px;
+  height: 411px;
 }
+
 .submit-title {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-color:#FFFFFF;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
+
 .submit-description {
- font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
 }
+
 .submit-button {
-background-color:#82B3D3;
-color:#FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
+
+.submit-input {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .footer-number-button {
- font-weight: 400;
-font-size: 40px;
-line-height: 40px;
-text-transform: uppercase;
-text-decoration:none;
-color:#000000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
+
 .main-catalog {
-background-image: url(../images/background-catalog.jpg);
-background-repeat:no-repeat;
-background-size: 100% auto;
-width: 1200px;
-height: 411px;
-color:#FFFFFF;
+  background-image: url(../images/background-catalog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 411px;
+  color: #FFFFFF;
 }
+
 .catalog-title {
- font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 78px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
 }
+
 .breadcrumbs-item {
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog-filter-title {
-font-weight: 700;
-font-size: 20px;
-line-height: 26px;
-text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
 }
+
 .catalog-filter-label {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
+
 .catalog-title-match {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color:#000000;
-    text-transform: uppercase;   
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
+
 .catalog-how-much {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color:#333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
+
+.catalog-filter-value {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter-reset {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-select {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 .hotel-card-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-color: black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
 }
+
 .hotel-card-link {
-text-decoration: none;
+  text-decoration: none;
 }
+
 .hotel-card-price {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
+
 .hotel-card-button-like {
-color: white;
-background-color: #82B3D3;
+  color: white;
+  background-color: #82B3D3;
 }
+
 .hotel-card-button-liked {
-background-color: #7DB54F;
+  background-color: #7DB54F;
 }
+
 .pagination {
- font-weight: 700;
-font-size: 20px;
- line-height: 36px;
-text-transform: uppercase;
-color:white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: white;
 }
+
 .pagination-link {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 .submit-title-cataloge {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color:#000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
 }
-.submit-description-cataloge{
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color:#333333;;
+
+.submit-description-cataloge {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  ;
 }
