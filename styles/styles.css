@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -22,6 +30,49 @@ body {
   background-color: white;
   color: black;
 }
+ul {
+  list-style-type:none;
+}
+ol {
+  list-style-type:none;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.advantages-item {
+  width: 400px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.interesting {
+  display: block;
+  text-align: center;
+  
+}
+
 
 .button {
   font-family: "PT Sans", sans-serif;
@@ -50,12 +101,24 @@ body {
 }
 
 .navigation-list {
+  width: 657px;
+  margin: 0;
+  padding: 0;
   line-height: 26px;
   font-size: 20px;
   color: black;
   background-color: white;
   font-weight: 700;
   text-decoration: none;
+}
+
+.navigation-item {
+  margin-left: 239px;
+}
+
+.navigation-user {
+  max-width: 263px;
+  margin-left: auto;
 }
 
 .index-background {
@@ -76,6 +139,11 @@ body {
   color: #000000;
 }
 
+.discription-sedona-box {
+  text-align: center;
+
+}
+
 .discription-sedona-litle {
   font-weight: 400;
   font-size: 22px;
@@ -91,11 +159,39 @@ body {
   color: #000000;
 }
 
+.advantages-title-first {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF
+}
+
+.avantages-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-number-first {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.advantages-description-first {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
 
 .first-item {
@@ -130,6 +226,7 @@ body {
 }
 
 .submit {
+  text-align: center;
   background-image: url(../images/background-submit.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -171,14 +268,27 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
-
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-socials-list {
+width: 142px;
+}
 .footer-number-button {
+  margin-left: 236px;
+  margin-right: 235px;
+  width: 400px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+.footer-logo-button {
+width: 115px;
 }
 
 .main-catalog {
