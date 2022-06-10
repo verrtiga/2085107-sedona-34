@@ -30,15 +30,22 @@ body {
   background-color: white;
   color: black;
 }
+
 ul {
-  list-style-type:none;
+  list-style-type: none;
 }
+
 ol {
-  list-style-type:none;
+  list-style-type: none;
 }
+
 .logo {
   display: block;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 .page-container {
@@ -55,6 +62,7 @@ ol {
   width: 1200px;
   margin: 0 auto;
 }
+
 .advantages-item {
   width: 400px;
 }
@@ -70,7 +78,7 @@ ol {
 .interesting {
   display: block;
   text-align: center;
-  
+
 }
 
 
@@ -235,6 +243,13 @@ ol {
   height: 411px;
 }
 
+.submit-catalog {
+  text-align: center;
+  padding: 94px 0;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 .submit-title {
   font-weight: 700;
   font-size: 30px;
@@ -268,14 +283,17 @@ ol {
   font-size: 18px;
   line-height: 21px;
 }
+
 .footer-container {
   display: flex;
   width: 1200px;
   margin: 0 auto;
 }
+
 .footer-socials-list {
-width: 142px;
+  width: 142px;
 }
+
 .footer-number-button {
   margin-left: 236px;
   margin-right: 235px;
@@ -287,17 +305,17 @@ width: 142px;
   text-decoration: none;
   color: #000000;
 }
+
 .footer-logo-button {
-width: 115px;
+  width: 115px;
 }
 
 .main-catalog {
   background-image: url(../images/background-catalog.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 1200px;
-  height: 411px;
   color: #FFFFFF;
+  margin: 0 40px;
 }
 
 .catalog-title {
@@ -312,6 +330,11 @@ width: 115px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
@@ -365,6 +388,12 @@ width: 115px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.hotel-card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hotel-card-title {
