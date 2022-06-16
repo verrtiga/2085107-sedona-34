@@ -44,9 +44,6 @@ ol {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  visibility: hidden;
-}
 
 .page-container {
   width: 1200px;
@@ -100,6 +97,7 @@ ol {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  background-color: #82B3D3;
   text-transform: uppercase;
 }
 
@@ -120,18 +118,10 @@ ol {
   text-decoration: none;
 }
 
-.navigation-item {
-  margin-left: 239px;
-}
-
-.navigation-user {
-  max-width: 263px;
-  margin-left: auto;
-}
 
 .index-background {
   background-image: url("../images/index-background.jpg");
-  background-color: white;
+  background-color: rgb(139, 158, 161);
   color: #000000;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -310,19 +300,13 @@ ol {
   width: 115px;
 }
 
-.main-catalog {
-  background-image: url(../images/background-catalog.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: #FFFFFF;
-  margin: 0 40px;
-}
 
 .catalog-title {
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  color: #FFFFFF
 }
 
 .breadcrumbs-item {
@@ -330,14 +314,19 @@ ol {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  color: #FFFFFF;
 }
 
 .catalog-filter {
+  background-image: url(../images/background-catalog.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
   display: flex;
   flex-direction: column;
 }
 
 .catalog-filter-title {
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -345,6 +334,7 @@ ol {
 }
 
 .catalog-filter-label {
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -448,4 +438,16 @@ ol {
   line-height: 26px;
   color: #333333;
   ;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
