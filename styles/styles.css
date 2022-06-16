@@ -42,6 +42,8 @@ ol {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 
@@ -52,6 +54,7 @@ ol {
 
 .main-container {
   flex-grow: 1;
+  
 }
 
 .navigation {
@@ -105,8 +108,12 @@ ol {
   background-color: white;
   color: #000000;
 }
-
+.navigation-logo {
+  margin-right: 45px;
+}
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 657px;
   margin: 0;
   padding: 0;
@@ -117,8 +124,29 @@ ol {
   font-weight: 700;
   text-decoration: none;
 }
+.navigation-link {
+  display: block;
+  line-height: 26px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navigation-item {
 
+  margin-right: 34px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navigation-user {
+  max-width: 270px;
+}
+.navigation-user .navigation-list {
+  min-width: 18px;
+  min-height: 17px;
 
+}
 .index-background {
   background-image: url("../images/index-background.jpg");
   background-color: rgb(139, 158, 161);
