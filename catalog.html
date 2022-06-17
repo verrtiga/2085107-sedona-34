@@ -12,7 +12,9 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-logo ">
+          <a href="index.html">
           <img class="navigation-logo" src="images/icons/logo.svg" width="147" height="78" alt="Логотип Седона">
+         </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="index.html"> Главная </a>
@@ -44,13 +46,16 @@
 
   <main class="main-catalog main-container">
     <div class="page-container">
-      <header class="catalog-filter">
+      <header class="background-header">
         <h1 class="catalog-title"> Гостиницы Седоны </h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <img class="breacrumbs-logo-index" src="#" alt="Главная">
             </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <img class="breadcrumbs-link" src="#" alt="стрелка">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link"> Гостиницы </a>
@@ -61,7 +66,7 @@
         <h2 class="visually-hidden"> Список гостиниц с фильтрами </h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title"> Инфраструктура </legend>
+            <legend class="catalog-filter-title"> Инфраструктура: </legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="catalog-filter-label">
@@ -85,7 +90,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title"> Тип Жилья </legend>
+            <legend class="catalog-filter-title"> Тип Жилья: </legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="catalog-filter-label">
@@ -107,15 +112,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group-value">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label class="visually-hidden"> Стоимость от нуля рублей до девяти тысяч
-              <input class="catalog-filter-value" type="number" min="0" name="from" placeholder="0 от">
-            </label>
+             <div class="value-container">
+            <input class="catalog-filter-value" type="number" min="0" name="from" placeholder="0 от">
             <input class="catalog-filter-value" type="number" max="9000" name="to" placeholder="9000 до">
+          </div>
             <input class="catalog-filter-range" type="range" min="0" max="9000" name="value">
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group-button">
             <button class="button-catalog" type="submit">Применить</button>
             <button class="catalog-filter-reset" type="reset"> Cбросить </button>
 
@@ -123,6 +128,7 @@
         </form>
       </header>
       <section class="catalog">
+        <div class="catalog-container">
         <p class="catalog-title-match"> Найдено гостиниц: 38</p>
         <select class="catalog-select" aria-label="Сортировка">
           <option value="cheap"> Сначала дешевые </option>
@@ -135,6 +141,7 @@
         <a href="#" class="button-breadcrumbs">
           <span class="visually-hidden"> Показать карточки </span>
         </a>
+        </div>
 
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
@@ -188,7 +195,7 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link" href="#"> 1 </a>
+            <a class="pagination-link-first" href="#"> 1 </a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#"> 2 </a>
@@ -218,7 +225,7 @@
       </section>
       <article class="submit-catalog">
         <h2> <label class="submit-title-cataloge" for="email">Подпишитесь на рассылку </label> </h2>
-        <p class="submit-description-cataloge">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="submit-description-cataloge">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="submit-form" action="https://echo.htmlacademy.ru/" method="get">
           <input class="submit-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
           <button class="submit-button"> Подписаться </button>
