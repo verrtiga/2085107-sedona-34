@@ -68,12 +68,15 @@ ol {
 .advantages-item {
   width: 400px;
 }
+
 .advantages-include {
   display: grid;
+  gap: 0;
   grid-template-areas: "house food suvenir";
   justify-content: end;
   padding: 0;
 }
+
 .advantages-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
@@ -90,7 +93,7 @@ ol {
 }
 
 .advantages-item-realcountry {
-  
+
   grid-area: country;
 }
 
@@ -257,6 +260,15 @@ ol {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.advantages-title-bottom {
+  margin-top: 103px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .advantages-title {
