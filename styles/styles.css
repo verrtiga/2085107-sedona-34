@@ -45,6 +45,7 @@ ol {
   padding-top: 51px;
   padding-bottom: 82px;
 }
+
 .page-footer {
   display: flex;
 }
@@ -264,7 +265,7 @@ ol {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
- 
+
 }
 
 .discription-sedona-box {
@@ -283,7 +284,7 @@ ol {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  
+
 }
 
 .advantages-title-bottom {
@@ -419,11 +420,13 @@ ol {
   text-align: center;
   padding: 94px 0;
 }
+
 .pagination-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
+
 .submit-title {
   width: 410px;
   padding-top: 90px;
@@ -499,7 +502,7 @@ ol {
   padding-left: 70px;
   padding-top: 35px;
   padding-right: 635px;
-  margin:0;
+  margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -667,9 +670,11 @@ ol {
   padding: 0;
 
 }
+
 .first-card {
   margin-left: 73px;
 }
+
 .hotel-card-desc {
   display: grid;
   grid-template-columns: 170px 170px;
@@ -723,16 +728,17 @@ ol {
 
 .pagination {
   display: flex;
-  margin:0;
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   color: white;
 }
- .first-pagination {
+
+.first-pagination {
   padding-left: 73px;
- }
+}
 
 
 .pagination-item:not(:last-child) {
@@ -772,17 +778,19 @@ ol {
 }
 
 .catalog-bottom {
-display: flex;
-justify-content: end;
-align-items: center;
-margin-right: 71px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 71px;
 
 }
+
 .catalog-select-bottom {
   grid-column: 2/3;
   width: 160px;
   height: 50px;
 }
+
 .submit-title-cataloge {
   width: 410px;
   padding-top: 90px;
