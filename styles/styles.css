@@ -124,10 +124,12 @@ ol {
   width: 400px;
   grid-area: suvenir;
 }
+
 .advantages-container {
   display: grid;
   grid-template-columns: 400px 400px 400px;
 }
+
 .advantages-desc {
   display: grid;
 }
@@ -651,20 +653,36 @@ ol {
 }
 
 .hotel-card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 38px;
   margin: 0;
   padding: 0;
 
 }
 
-.hotel-card-item {}
+.hotel-card-desc {
+  display: grid;
+  grid-template-columns: 170px 170px;
+  grid-template-rows: auto min-content 40px;
+  gap: 16px 20px;
+
+
+}
+
+.hotel-card-link {
+  display: grid;
+  grid-template-rows: 211px min-content;
+  grid-column: 1/3;
+}
 
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: black;
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 
 .hotel-card-link {
@@ -672,6 +690,13 @@ ol {
 }
 
 .hotel-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-price-name {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
