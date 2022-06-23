@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="page-container">
   <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list">
@@ -45,7 +46,6 @@
   </header>
 
   <main class="main-catalog main-container">
-    <div class="page-container">
       <header class="background-header">
         <h1 class="catalog-title"> Гостиницы Седоны </h1>
         <ul class="breadcrumbs">
@@ -145,7 +145,7 @@
 
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
-            <div class="hotel-card">
+            <div class="hotel-card first-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/amara-resort-spa.jpg" width="300" height="211"
                   alt="Amara Resort & Spa">
@@ -192,7 +192,7 @@
             </div>
           </li>
           <li class="hotel-card-item">
-            <div class="hotel-card">
+            <div class="hotel-card first-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/greentree-inn.jpg" width="300" height="211"
                   alt="GreenTree Inn">
@@ -207,8 +207,9 @@
             </div>
           </li>
         </ul>
+          <div class="pagination-container">
         <ul class="pagination">
-          <li class="pagination-item">
+          <li class="pagination-item first-pagination">
             <a class="pagination-link-first" href="#"> 1 </a>
           </li>
           <li class="pagination-item">
@@ -229,13 +230,15 @@
         </ul>
         <form class="catalog-bottom" action="https://echo.htmlacademy.ru/" method="get">
           <p class="catalog-how-much"> Гостиниц на странице: </p>
-          <select class="cataloge-select" aria-label="Сортировка">
-            <option value="first"> 1 </option>
+          <select class="catalog-select-bottom" aria-label="Сортировка">
+            <option value="first">  1 </option>
             <option value="second"> 2 </option>
             <option value="third"> 3 </option>
             <option value="fourth"> 4 </option>
           </select>
         </form>
+          </div>
+        
       </section>
       <article class="submit-catalog">
         <h2> <label class="submit-title-cataloge" for="email">Подпишитесь на рассылку </label> </h2>
@@ -247,7 +250,6 @@
         </form>
       </article>
       <footer class="page-footer">
-        <div class="footer-container">
           <ul class="footer-socials-list">
             <li class="footer-social-item">
               <a class="button" href="https://vk.com/htmlacademy">
@@ -273,10 +275,9 @@
               alt="Логотип HTML-Академии">
             <span class="visually-hidden">Логотип HTML Академии</span>
           </a>
-        </div>
       </footer>
-    </div>
   </main>
+  </div>
 </body>
 
 </html>
