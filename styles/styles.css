@@ -80,6 +80,9 @@ ol {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 384px 384px 384px ;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -113,8 +116,10 @@ ol {
 }
 
 .demon-bridge {
-  order: -1;
+  display: grid;
+  grid-area: bridge;
   grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 .advantages-img {
@@ -126,38 +131,32 @@ ol {
   width: 400px;
   grid-area: suvenir;
 }
-
-.advantages-container {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-}
-
 .advantages-desc {
-  display: grid;
+background-color:#82B3D3;
 }
-
 .advantages-item-bridge {
   display: grid;
+  grid-row: 3/4;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 384px;
-  grid-column: 1 / 3;
+ 
 }
 
 .advantages-item-place {
-  display: grid;
+  
   grid-area: place;
   grid-column: 1/2;
+
 }
 
 .advantages-item-road {
-  display: grid;
+  
   grid-area: road;
   grid-column: 2/3;
 
 }
 
 .advantages-item-people {
-  display: grid;
+  
   grid-area: people;
   grid-column: 3/4;
 
