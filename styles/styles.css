@@ -637,24 +637,51 @@ ol {
 }
 
 .footer-number-button {
-  margin-top: 45px;
+  margin-left: 169px;
+  margin-right: 70px;
+  margin-top: 60px;
   margin-bottom: 35px;
-  margin-left: 236px;
-  margin-right: 235px;
-  width: 400px;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
+}
+
+.footer-number-button>svg {
+  fill: #000000;
+}
+
+.footer-number-button:hover>svg {
+  fill: #756157;
+}
+
+.footer-number-button:focus>svg {
+  fill: #756157;
+}
+
+.footer-number-button:active>svg {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 
+
 .footer-logo-button {
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 40px;
+  margin-left: 170px;
   width: 115px;
+}
+
+.footer-logo-button>svg {
+  fill: #000000
+}
+
+.footer-logo-button:hover>svg {
+  fill: #756157;
+}
+
+.footer-logo-button:focus>svg {
+  fill: #756157;
+}
+
+.footer-logo-button:active>svg {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .catalog-title {
