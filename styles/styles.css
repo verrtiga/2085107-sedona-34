@@ -227,8 +227,10 @@ ol {
   background-color: #756157;
 }
 .button-catalog {
-  padding: 14px 15px;
+  width: 160px;
+  height: 48px;
   margin-left: 50px;
+  margin-top: 50px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -237,8 +239,19 @@ ol {
   color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
+  border-radius: 4px;
+  border-color: #82B3D3;
+  cursor: pointer;
 }
-
+.button-catalog:hover  {
+  background-color: #68A2CA;
+}
+.button-catalog:focus {
+  background-color: #68A2CA;
+}
+.button-catalog:active {
+  background-color: #82B3D3;
+}
 .page-header {
   color: #000000;
 }
@@ -717,6 +730,7 @@ ol {
 .breadcrumbs {
   display: flex;
   padding-left: 72px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-item {
@@ -727,10 +741,17 @@ ol {
   color: #FFFFFF;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link > svg {
+  fill:#FFFFFF;
   max-width: 73px;
   margin-left: 10px;
+  margin-right: 10px;
 }
+.breadcrumbs-item > svg {
+  fill: #FFFFFF;
+  margin-right: 10px;
+}
+
 
 .breadcrumbs:first-child {
   margin-left: 72px;
@@ -747,29 +768,41 @@ ol {
 .catalog-filter {
   display: flex;
   flex-direction: row;
+  width: 1060px;
+  max-height: 155px;
 
 }
-
+.catalog-filter-input {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
 .catalog-filter-group {
   border: 0;
+  margin-left: 70px;
+  padding:0;
+  
 }
-
+.button-form-container {
+  display:flex;
+}
 .catalog-filter-group-value {
   border: 0;
   display: flex;
   flex-direction: column;
+  margin-left: 175px;
+  padding:0;
 }
 
 .catalog-filter-group-button {
   margin: 0;
   padding: 0;
-
-
   border: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .catalog-filter-title {
   color: #FFFFFF;
   font-weight: 700;
@@ -777,8 +810,6 @@ ol {
   line-height: 26px;
   text-transform: capitalize;
   margin-top: 40px;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 .catalog-filter-list {
@@ -790,8 +821,6 @@ ol {
 
 .catalog-filter-item {
   padding-top: 15px;
-  padding-left: 70px;
-  padding-right: 70px;
   width: 150px;
 }
 
@@ -852,12 +881,18 @@ ol {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: 65px;
+  height: 20px;
+  color: #000000;
+  background-color: #f2f2f2;
+  margin-top: 20px;
 }
 
 .catalog-select {
   min-width: 290px;
   max-height: 50px;
   margin-top: 55px;
+  padding-left: 20px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -873,6 +908,18 @@ ol {
   margin: 0;
   padding: 0;
 
+}
+.breadcrumbs-container {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs-container:last-of-type {
+  margin-right: 70px;
+}
+
+.button-breadcrumbs > svg{
+  fill:#000000;
+  margin-left: 8px;
 }
 
 .first-card {
