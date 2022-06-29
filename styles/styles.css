@@ -217,6 +217,15 @@ ol {
   border-radius: 5px;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+.button:focus {
+  background-color: #615048;
+}
+.button:active {
+  background-color: #756157;
+}
 .button-catalog {
   padding: 14px 15px;
   margin-left: 50px;
@@ -583,9 +592,18 @@ ol {
   border-width: 0;
   width: 200px;
   height: 62px;
+  cursor: pointer;
 
 }
-
+.submit-button:hover {
+ background-color: #68A2CA;
+}
+.submit-button:focus {
+  background-color: #68A2CA;
+}
+.submit-button:active {
+  background-color: #82B3D3;
+}
 .submit-input {
   width: 600px;
   height: 60px;
