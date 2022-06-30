@@ -143,18 +143,21 @@
           </select>
           <div class="breadcrumbs-container">
             <a href="#" class="button-breadcrumbs">
-              <svg width="16" aria-hidden="true" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="16" aria-hidden="true" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
               </svg>
             </a>
             <a href="#" class="button-breadcrumbs">
-              <svg width="16" aria-hidden="true" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="16" aria-hidden="true" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
               </svg>
             </a>
             <a href="#" class="button-breadcrumbs">
 
-              <svg width="16" aria-hidden="true"height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="16" aria-hidden="true" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
               </svg>
@@ -164,7 +167,7 @@
 
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
-            <div class="hotel-card first-card">
+            <div class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/amara-resort-spa.jpg" width="300" height="211"
                   alt="Amara Resort & Spa">
@@ -173,8 +176,15 @@
               <div class="hotel-card-desc">
                 <b class="hotel-card-price-name"> Гостиница </b>
                 <b class="hotel-card-price"> От 4000 ₽ </b>
-                <a class="button" href="#"> Подробнее </a>
-                <a class="hotel-card-button-like button" href="#"> В избранное </a>
+                <a class="button-card-about button" href="#"> Подробнее </a>
+                <a class="button-card-like " href="#"> В избранное </a>
+                <div class="raiting" aria-label="4 звезды">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
+                <p class="raiting-volume"> Рейтинг: 8,5 </p>
               </div>
             </div>
           </li>
@@ -188,8 +198,15 @@
               <div class="hotel-card-desc">
                 <b class="hotel-card-price-name"> Гостиница </b>
                 <b class="hotel-card-price"> От 5000 ₽ </b>
-                <a class="button" href="#"> Подробнее </a>
-                <a class="hotel-card-button-liked button" href="#"> В избранном </a>
+                <a class="button-card-about button" href="#"> Подробнее </a>
+                <a class="button-card-like" href="#"> В избранном </a>
+                <div class="raiting" aria-label="4 звезды">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
+                <p class="raiting-volume"> Рейтинг: 9,2 </p>
               </div>
             </div>
           </li>
@@ -205,13 +222,19 @@
               <div class="hotel-card-desc">
                 <b class="hotel-card-price-name"> Гостиница </b>
                 <b class="hotel-card-price"> От 2500 ₽ </b>
-                <a class="button" href="#"> Подробнее </a>
-                <a class="hotel-card-button-like button" href="#"> В избранное </a>
-              </div>
+                <a class="button-card-about button" href="#"> Подробнее </a>
+                <a class="button-card-like" href="#"> В избранное </a>
+                <div class="raiting" aria-label="3 звезды">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
+                <p class="raiting-volume"> Рейтинг: 6,9 </p>
+            </div>
             </div>
           </li>
           <li class="hotel-card-item">
-            <div class="hotel-card first-card">
+            <div class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/greentree-inn.jpg" width="300" height="211"
                   alt="GreenTree Inn">
@@ -220,15 +243,20 @@
               <div class="hotel-card-desc">
                 <b class="hotel-card-price-name"> Гостиница </b>
                 <b class="hotel-card-price"> От 2500 ₽ </b>
-                <a class="button" href="#"> Подробнее </a>
-                <a class="hotel-card-button-like button" href="#"> В избранное </a>
+                <a class="button-card-about button" href="#"> Подробнее </a>
+                <a class="button-card-like" href="#"> В избранное </a>
+                <div class="raiting" aria-label="2 звезды">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
+                <p class="raiting-volume"> Рейтинг: 5,0 </p>
               </div>
             </div>
           </li>
         </ul>
         <div class="pagination-container">
           <ul class="pagination">
-            <li class="pagination-item first-pagination">
+            <li class="pagination-item">
               <a class="pagination-link-first" href="#"> 1 </a>
             </li>
             <li class="pagination-item">
