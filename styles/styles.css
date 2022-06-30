@@ -389,13 +389,13 @@ ol {
 }
 
 .index-background {
-  background-image: url("../images/index-background.jpg");
+  position: relative;
+  text-align: center;
+  background-image: url(../images/vector.png), url("../images/index-background.jpg");
   background-color: rgb(139, 158, 161);
-  color: #000000;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 1200px;
-  min-height: 485px;
+  background-position: bottom, center;
 }
 
 .discription-sedona {
@@ -567,10 +567,10 @@ ol {
   align-items: baseline;
   width: 1056px;
   height: 60px;
-  margin-top: 96px;
+  margin-top: 30px;
   margin-left: 71px;
   margin-right: 71px;
-  
+
 }
 
 .submit-title {
@@ -929,16 +929,39 @@ ol {
   border-radius: 4px;
 }
 
-.raiting {
-  display: flex;
-  column-gap: 6px;
+.line {
+  background: url(../images/line.svg);
+  display: block;
+  border: 1px solid #e6e6e6;
+  margin-top: 66px;
+  margin-left: 72px;
+  margin-right: 72px
 }
 
-.star {
+.raiting {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.stars {
   width: 18px;
   height: 17px;
   background-image: url(../images/icons/star-1.svg);
+  display: block;
+  background-repeat: space no-repeat;
 
+}
+
+.stars.stars-two {
+  width: 44px;
+}
+
+.stars.stars-three {
+  width: 66px;
+}
+
+.stars.stars-four {
+  width: 89px;
 }
 
 .raiting-volume {
@@ -1146,12 +1169,15 @@ ol {
 .pagination-link:hover {
   background-color: #68A2CA;
 }
+
 .pagination-link:focus {
   background-color: #68A2CA
 }
+
 .pagination-link:active {
   background-color: #82B3D3;
 }
+
 .catalog-bottom {
   display: flex;
   justify-content: end;
