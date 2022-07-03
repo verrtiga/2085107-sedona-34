@@ -1571,6 +1571,7 @@ ol {
   margin-left: 42px;
 }
 
+
 .check-date-icon {
   position: absolute;
   right: 127px;
@@ -1583,13 +1584,31 @@ ol {
 }
 
 .check-in-out-input::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   padding-left: 19px;
+  
+}
+.check-in-out-input:hover {
+  background: #E6E6E6;
+}
+.check-in-out-input:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.check-in-out-input:active {
+  background: #FFFFFF;
+  color: rgba(0, 0, 0, 1);
+  
+}
+
+.check-in-out-input::placeholder:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .check-fieldset-out-in {
@@ -1637,6 +1656,7 @@ ol {
 }
 
 .check-count-child {
+  position: relative;
   border: 0;
   margin: 0;
   padding: 0;
@@ -1652,33 +1672,98 @@ ol {
   margin-left: 64px;
   padding: 0;
 }
-
+.check-count-input::-webkit-outer-spin-button,
+.check-count-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 .check-count-plus {
   position: absolute;
-  left: 371px;
-  top: 380px;
-
+  left: 361px;
+  top: 377px;
+  border:0;
+  cursor: pointer;
 }
-
+.check-count-plus > svg {
+  fill:#000000;
+  opacity: 0.3;
+}
+.check-count-plus:hover > svg {
+  opacity: 1;
+}
+.check-count-plus:focus > svg {
+border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+.check-count-plus:active > svg {
+  opacity: 0.3;
+}
 .check-count-minus {
   position: absolute;
   left: 275px;
-  top: 380px;
+  top: 372px;
+  border: 0;
+  cursor: pointer;
 }
-
+.check-count-minus > svg {
+background: #000000;
+opacity: 0.3;
+}
+.check-count-minus:hover > svg {
+  opacity: 1;
+}
+.check-count-minus:focus > svg {
+border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+.check-count-minus:active > svg {
+  opacity: 0.3;
+}
 .check-count-plus-child {
   position: absolute;
-  left: 661px;
-  top: 380px;
-
+  right:80px;
+  top: 15px;
+  border: 0;
+  cursor: pointer;
 }
-
+.check-count-plus-child > svg {
+  position: absolute;
+}
+.check-count-plus-child > svg {
+  fill:#000000;
+  opacity: 0.3;
+}
+.check-count-plus-child:hover > svg {
+  opacity: 1;
+}
+.check-count-plus-child:focus > svg {
+border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+.check-count-plus-child:active > svg {
+  opacity: 0.3;
+}
 .check-count-minus-child {
   position: absolute;
-  left: 566px;
-  top: 380px;
+  right: 10px;
+  top:5px;
+  border:0;
+  cursor: pointer;
 }
-
+.check-count-minus-child > svg {
+  background: #000000;
+  opacity: 0.3;
+}
+.check-count-minus-child:hover > svg {
+  opacity: 1;
+}
+.check-count-minus-child:focus > svg {
+border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+.check-count-minus-child:active > svg {
+  opacity: 0.3;
+}
 .check-count-input::placeholder {
   color: #000000;
   font-family: 'PT Sans';
@@ -1706,10 +1791,14 @@ ol {
   border: 0;
   background-color: #F2F2F2;
   border-radius: 4px;
-  margin-left: 27px;
+  margin-left: 48px;
   padding: 0;
 }
-
+.check-count-input-child::-webkit-outer-spin-button,
+.check-count-input-child::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 .check-count-input-child::placeholder {
   color: #000000;
   font-family: 'PT Sans';
@@ -1735,6 +1824,18 @@ ol {
   width: 575px;
   height: 60px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.search-modal-button:hover {
+  background: #68A2CA;
+}
+.search-modal-button:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+.search-modal-button:active {
+  background: #68A2CA;
+  opacity: 60%;
 }
 .tooltip-toggle {
   background-color: #83B3D3;
@@ -1742,3 +1843,51 @@ ol {
   height: 25px;
   border: 0;
   border-radius: 50%;
+}
+.tooltip {
+  position: absolute;
+  z-index:3;
+  width: 25px;
+  height: 25px;
+  margin-top: 12px;
+  margin-right:18px;
+  
+}
+.tooltip-text {
+display: block;
+position: absolute;
+top:41px;
+right:-114px;
+width: 216px;
+padding-top: 15px;
+padding-left: 20px;
+padding-right: 18px;
+padding-bottom: 18px;
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color:#FFFFFF;
+background-color: #333333;
+align-items: center;
+box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+display:none;
+}
+.tooltip-text::before {
+  content: url(../images/icons/triangle.svg);
+  position: absolute;
+  top: -15px;
+  right: 115px;
+  width: 19px;
+  height: 9px;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.modal-label-icon {
+  position:relative;
+  
+}

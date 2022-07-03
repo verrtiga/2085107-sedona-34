@@ -174,51 +174,67 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <div class="order-form-container">
-        <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="check-fieldset-out-in">
-            <label class="check-title" for="check-in">Дата Заезда:</label>
-            <input class="check-in-out-input" name="check-in" id="check-in" type="text" placeholder="27 апреля 2020">
-            <button type="button" class="check-date-icon"></button>
-            <span class="check-error">Мы не можем отправить вас в прошлое.</span>
-          </fieldset>
-          <fieldset class="check-fieldset-out-in">
-            <label class="check-title" for="check-out">Дата Выезда:</label>
-            <input class="check-in-out-input" name="check-out" id="check-out" type="text" placeholder="1 сентября 2021">
-            <button type="button" class="check-date-icon"></button>
-            <span class="check-info"> На эти даты есть свободные номера. Пока есть.</span>
-          </fieldset>
-          <div class="count-container">
-          <fieldset class="check-count">
-            <label class="check-title" for="older">Взрослые:</label>
-            <input class="check-count-input" name="older" id="older" type="number" placeholder="2">
-            <button type="button" class="check-count-plus"></button>
-            <button type="button" class="check-count-minus"></button>
-          </fieldset>
-          <fieldset class="check-count-child">
-            <span class="modal-label">
-              <label class="check-title-child" for="child">Дети:</label>
-              <span class="tooltip">
-                <button type="button" class="tooltip-toggle">
-                  <svg class="tooltip-icon" width="1" height="10" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#a)" fill="#fff">
-                      <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" d="M0 0h1v9H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="check-fieldset-out-in">
+              <label class="check-title" for="check-in">Дата Заезда:</label>
+              <input class="check-in-out-input" name="check-in" id="check-in" type="text" placeholder="27 апреля 2020">
+              <button type="button" class="check-date-icon"></button>
+              <span class="check-error">Мы не можем отправить вас в прошлое.</span>
+            </fieldset>
+            <fieldset class="check-fieldset-out-in">
+              <label class="check-title" for="check-out">Дата Выезда:</label>
+              <input class="check-in-out-input" name="check-out" id="check-out" type="text"
+                placeholder="1 сентября 2021">
+              <button type="button" class="check-date-icon"></button>
+              <span class="check-info"> На эти даты есть свободные номера. Пока есть.</span>
+            </fieldset>
+            <div class="count-container">
+              <fieldset class="check-count">
+                <label class="check-title" for="older">Взрослые:</label>
+                <input class="check-count-input" name="older" id="older" type="number" placeholder="2">
+                <button type="button" class="check-count-plus">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" /></svg>
                 </button>
-              </span>
-            </span>
-            <input class="check-count-input-child " name="child" id="child" type="number" placeholder="1">
-            <button type="button" class="check-count-plus-child"></button>
-            <button type="button" class="check-count-minus-child"></button>
-          </fieldset>
-        </div>
-          <button type="button" class="search-modal-button"> Найти </button>
-        </form>
+                <button type="button" class="check-count-minus">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z" /></svg>
+                </button>
+              </fieldset>
+              <fieldset class="check-count-child">
+                <span class="modal-label modal-label-icon">
+                  <label class="check-title-child" for="child">Дети:</label>
+                  <span class="tooltip">
+                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="1" height="10" viewBox="0 0 1 9" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" fill="#fff">
+                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h1v9H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <input class="check-count-input-child " name="child" id="child" type="number" placeholder="1">
+                <button type="button" class="check-count-plus-child">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" /></svg>
+                </button>
+                <button type="button" class="check-count-minus-child">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z" /></svg>
+                </button>
+              </fieldset>
+            </div>
+            <button type="button" class="search-modal-button"> Найти </button>
+          </form>
         </div>
 
       </section>
