@@ -1463,6 +1463,10 @@ ol {
   padding-left: 20px;
   color: #333333;
   border: 2px solid #e5e5e5;
+  appearance: none;
+  background: url(../images/icons/select.svg);
+  background-repeat: no-repeat;
+  background-position: 128px center;
 
 }
 
