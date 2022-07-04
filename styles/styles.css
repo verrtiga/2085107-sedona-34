@@ -45,7 +45,7 @@ ol {
   padding-top: 51px;
   padding-bottom: 82px;
   position: relative;
-  z-index: 1;
+
 }
 
 .page-footer {
@@ -282,7 +282,7 @@ ol {
 .navigation-link {
   position: relative;
   width: auto;
-  margin: 20px 19px;
+  margin: 20px 18px;
   display: block;
   line-height: 26px;
   font-size: 20px;
@@ -296,7 +296,7 @@ ol {
   content: "";
   position: absolute;
   width: 100%;
-  top: 50px;
+  top: 44px;
   height: 2px;
   background-color: #756157;
 }
@@ -310,11 +310,12 @@ ol {
   margin-left: 70px;
   width: 139px;
   height: 70px;
+  z-index: 1;
 }
 
 
 .navigation-item:nth-child(2) {
-  margin-left: 47px;
+  margin-left: 28px;
 }
 
 
@@ -328,11 +329,13 @@ ol {
 .navigation-user {
   max-width: 270px;
   margin-left: auto;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-bottom: 23px;
   margin-right: 70px;
 
+
 }
+
 
 .navigation-user .navigation-list {
   min-width: 18px;
@@ -354,11 +357,11 @@ ol {
 }
 
 .navigation-item-like {
-  margin-right: 32px;
+  margin-right: 37px;
 }
 
 .navigation-item-search {
-  margin-right: 23px;
+  margin-right: 19px;
 }
 
 .navigation-link-button {
@@ -373,32 +376,26 @@ ol {
   background-image: url(../images/icons/like.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 25px 12px;
+  padding: 28px 12px;
 
 }
 
-.navigation-link-like::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 15px;
-  width: 20px;
-  height: 20px;
-  background-color: #7db54f;
-  border-radius: 50%;
-}
 
 .counter-likes {
   position: absolute;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  left: 20px;
+  left: 13px;
   top: 23px;
   background-color: transparent;
   font-size: 10px;
   line-height: 13px;
   color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  background-color: #7db54f;
+  border-radius: 50%;
 
 
   text-align: center;
@@ -898,7 +895,7 @@ ol {
   background: rgba(255, 255, 255, 0.6)
 }
 
-.control:focus .control-mark {
+.catalog-filter-input:focus + .control-mark {
   background: rgba(255, 255, 255, 0.6);
   border: 3px solid #83B3D3;
 }
@@ -930,7 +927,7 @@ ol {
   background: rgba(255, 255, 255, 0.6)
 }
 
-.control-radio-mark:focus {
+.catalog-filter-input[type="radio"]:focus + .control-radio-mark {
   border: 3px solid #83B3D3;
 }
 
@@ -1009,6 +1006,7 @@ ol {
   color: #FFFFFF;
   line-height: 21px;
   padding-top: 14px;
+  padding-left:19px;
   padding-bottom: 14px;
   width: 140px;
   border: 2px solid #FFFFFF;
@@ -1156,8 +1154,19 @@ ol {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
+  appearance: none;
+  background: url(../images/icons/select.svg);
+  background-repeat: no-repeat;
+  background-position: 262px center;
+  
 }
-
+.catalog-select::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  background-image: url(../images/icons/select.svg) ;
+}
 .catalog-select:hover {
   border-color: #68A2CA;
 }
@@ -1411,7 +1420,22 @@ ol {
   border: none;
   border-radius: 4px;
 }
-
+.pagination-span {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 4px;
+  cursor: default;
+}
 .pagination-link:hover {
   background-color: #68A2CA;
 }
@@ -1504,7 +1528,7 @@ ol {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
-  display:none;
+  display: none;
 }
 
 .modal {
@@ -1524,8 +1548,8 @@ ol {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 40px;
   margin-right: 70px;
   margin-top: 54px;
   width: 53px;
@@ -1704,7 +1728,8 @@ ol {
   background-color: #F2F2F2;
   border-radius: 4px;
   margin-left: 64px;
-  padding: 0;
+  padding:0;
+  padding-left: 10px;
 }
 
 .check-count-input::-webkit-outer-spin-button,
