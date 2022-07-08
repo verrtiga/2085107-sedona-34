@@ -1018,7 +1018,7 @@ ol {
 }
 
 .catalog-input-value {
-
+  appearance: textfield;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -1034,6 +1034,7 @@ ol {
   margin: 0;
   background-color: transparent;
   word-spacing: 75px;
+  
 
 }
 
@@ -1063,8 +1064,7 @@ ol {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
-}
-
+} 
 .catalog-input-value:nth-child(3) {
   border-radius: 0 10px 10px 0;
 
@@ -1821,6 +1821,7 @@ ol {
 .check-count-input::-webkit-outer-spin-button,
 .check-count-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  -moz-appearance:none;
   appearance: none;
   margin: 0;
 }
@@ -1973,7 +1974,7 @@ ol {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
-}
+} 
 
 .check-count-input-child::placeholder {
   color: #000000;
