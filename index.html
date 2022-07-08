@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -61,15 +62,17 @@
             <img class="real-county" src="images/real-country-photo.jpg" width="800" height="384" alt="Городок Седона">
             <ul class="advantages-include">
               <li class="advantages-item-house advantages-now-white">
-                <h4 class="advantages-title"> Жилье </h4>
+                <h4 class="advantages-title"> Жильё </h4>
                 <p class="advantages-description"> Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               <li class="advantages-item-food advantages-food">
                 <h4 class="advantages-title"> Еда </h4>
-                <p class="advantages-description"> Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь! </p>
+                <p class="advantages-description"> Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
+                  разочаруетесь! </p>
               </li>
               <li class="advantages-item-suvenir advantages-now-white">
                 <h4 class="advantages-title"> Сувениры </h4>
-                <p class="advantages-description"> Не только китайского,<br>но и настоящего местного<br>производства! </p>
+                <p class="advantages-description"> Не только китайского,<br>но и настоящего местного<br>производства!
+                </p>
               </li>
             </ul>
           </li>
@@ -77,7 +80,8 @@
             <div class="advantages-desc">
               <h3 class="advantages-title-first">Там есть<br>мост дъявола</h3>
               <p class="advantages-number-first"> — №2 — </p>
-              <p class="advantages-description-first"> Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется </p>
+              <p class="advantages-description-first"> Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется
+              </p>
             </div>
             <img class="demon-bridge" src="images/bridge-demon.jpg" width="800" height="384" alt="Мост дъявола">
           </li>
@@ -101,8 +105,8 @@
 
       <section class="interesting">
         <h2 class="interesting-title"> Заинтересовались? </h2>
-        <p class="interesting-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
+        <p class="interesting-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+          гостиниц в Седоне&ensp;</p>
         <a class="interesting-button button" href="catalog.html"> Поиск гостиницы в Седоне </a>
       </section>
 
@@ -173,19 +177,24 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <div class="order-form-container">
           <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="check-fieldset-out-in">
-              <label class="check-title" for="check-in">Дата Заезда:</label>
-              <input class="check-in-out-input" name="check-in" id="check-in" type="text" placeholder="27 апреля 2020">
-              <button type="button" class="check-date-icon"></button>
-              <span class="check-error">Мы не можем отправить вас в прошлое.</span>
-            </fieldset>
-            <fieldset class="check-fieldset-out-in">
-              <label class="check-title" for="check-out">Дата Выезда:</label>
-              <input class="check-in-out-input" name="check-out" id="check-out" type="text"
-                placeholder="1 сентября 2021">
-              <button type="button" class="check-date-icon"></button>
-              <span class="check-info"> На эти даты есть свободные номера. Пока есть.</span>
-            </fieldset>
+            <div class="check-in-container">
+              <fieldset class="check-fieldset-out-in">
+                <label class="check-title" for="check-in">Дата Заезда:</label>
+                <input class="check-in-out-input" name="check-in" id="check-in" type="text"
+                  placeholder="27 апреля 2020">
+                <button type="button" class="check-date-icon"></button>
+                <span class="check-error">Мы не можем отправить вас в прошлое.</span>
+              </fieldset>
+            </div>
+            <div class="check-out-container">
+              <fieldset class="check-fieldset-out-in">
+                <label class="check-title title-out" for="check-out">Дата Выезда:</label>
+                <input class="check-in-out-input" name="check-out" id="check-out" type="text"
+                  placeholder="1 сентября 2021">
+                <button type="button" class="check-date-icon"></button>
+                <span class="check-info"> На эти даты есть свободные номера. Пока есть.</span>
+              </fieldset>
+            </div>
             <div class="count-container">
               <fieldset class="check-count">
                 <label class="check-title" for="older">Взрослые:</label>
