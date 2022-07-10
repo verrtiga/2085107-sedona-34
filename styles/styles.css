@@ -1598,7 +1598,7 @@ ol {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
-  display: none;
+  
 }
 
 .modal {
@@ -1700,14 +1700,19 @@ ol {
 }
 
 .check-in-out-input {
-  position: relative;
-  width: 420px;
-  height: 50px;
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  border: transparent;
-  padding: 0;
-  margin-left: 36px;
+    position: relative;
+    width: 361px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border: transparent;
+    padding: 14px 19px;
+    margin-left: 36px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-right: 30px;
 
 }
 
@@ -1730,7 +1735,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 19px;
+  
 
 }
 
@@ -1808,14 +1813,15 @@ ol {
 
 .check-count-input {
   position: relative;
-  width: 133px;
-  height: 50px;
+  width: 19px;
   border: transparent;
   background-color: #F2F2F2;
   border-radius: 4px;
-  margin-left: 64px;
-  padding: 0;
-  padding-left: 10px;
+  padding: 15px 62px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .check-count-input::-webkit-outer-spin-button,
@@ -1829,7 +1835,12 @@ ol {
 .check-count-plus {
   position: absolute;
   right: 104px;
-  top: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  place-content: center;
+  display: grid;
   border: transparent;
   cursor: pointer;
   background-color: transparent;
@@ -1844,7 +1855,7 @@ ol {
   opacity: 1;
 }
 
-.check-count-plus:focus>svg {
+.check-count-plus:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1856,8 +1867,12 @@ ol {
 .check-count-minus {
   position: absolute;
   right: 9px;
-  top: 11px;
-  ;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  place-content: center;
+  display: grid;
   border: transparent;
   cursor: pointer;
   background-color: transparent;
@@ -1872,7 +1887,7 @@ ol {
   opacity: 1;
 }
 
-.check-count-minus:focus>svg {
+.check-count-minus:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1884,14 +1899,17 @@ ol {
 .check-count-plus-child {
   position: absolute;
   right: 109px;
-  top: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  place-content: center;
+  display: grid;
   border: transparent;
   cursor: pointer;
 }
 
-.check-count-plus-child>svg {
-  position: absolute;
-}
+
 
 .check-count-plus-child>svg {
   fill: #000000;
@@ -1902,7 +1920,7 @@ ol {
   opacity: 1;
 }
 
-.check-count-plus-child:focus>svg {
+.check-count-plus-child:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1914,7 +1932,12 @@ ol {
 .check-count-minus-child {
   position: absolute;
   right: 10px;
-  top: 11px;
+  height: 25px;
+  width: 25px;
+  place-content: center;
+  display: grid;
+  top: 50%;
+  transform: translateY(-50%);
   border: transparent;
   background-color: transparent;
   cursor: pointer;
@@ -1922,6 +1945,7 @@ ol {
 
 .check-count-minus-child>svg {
   background: #000000;
+  display: block;
   opacity: 0.3;
 }
 
@@ -1929,7 +1953,7 @@ ol {
   opacity: 1;
 }
 
-.check-count-minus-child:focus>svg {
+.check-count-minus-child:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1945,7 +1969,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 61px;
+  
 }
 
 .check-title-child {
@@ -1958,16 +1982,7 @@ ol {
   text-transform: capitalize;
 }
 
-.check-count-input-child {
-  position: relative;
-  width: 133px;
-  height: 50px;
-  border: 0;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  margin-left: 48px;
-  padding: 0;
-}
+
 
 .check-count-input-child::-webkit-outer-spin-button,
 .check-count-input-child::-webkit-inner-spin-button {
@@ -2000,7 +2015,7 @@ ol {
   line-height: 40px;
   text-transform: uppercase;
   width: 575px;
-  height: 60px;
+  padding: 12px 26px;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -2011,7 +2026,7 @@ ol {
 
 .search-modal-button:focus {
   background: #68A2CA;
-  border: 2px solid #756257;
+  box-shadow: 0px 0px 0px 2px rgba(75,62,57, 0.50);
 }
 
 .search-modal-button:active {
