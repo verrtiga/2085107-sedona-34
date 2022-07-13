@@ -354,7 +354,7 @@ body {
 .navigation-user {
   max-width: 270px;
   margin-left: auto;
-  margin-right: 75px;
+  margin-right: 71px;
 
 
 }
@@ -388,7 +388,7 @@ body {
 }
 
 .navigation-item-like {
-  margin-right: 33px;
+  margin-right: 27px;
   margin-top: 19px;
 }
 
@@ -399,7 +399,7 @@ body {
 
 .navigation-link-button {
   min-width: 160px;
-  padding: 9px 30px;
+  padding: 9px 35px;
 
 
 }
@@ -669,7 +669,7 @@ body {
     color: #FFFFFF;
     border-radius: 0px 10px 10px 0px;
     border-width: 0;
-    padding: 12px 15px;
+    padding: 12px 34px;
     cursor: pointer;
 
   }
@@ -692,8 +692,7 @@ body {
   }
 
   .submit-input {
-    width: 574px;
-    height: 60px;
+    min-width: 574px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
