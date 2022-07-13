@@ -31,11 +31,11 @@ body {
   color: #000000;
 }
 
-ul {
+.page-container ul {
   list-style-type: none;
 }
 
-ol {
+.page-container ol {
   list-style-type: none;
 }
 
@@ -246,7 +246,7 @@ ol {
   width: 160px;
   height: 46px;
   display: inline-block;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -296,7 +296,7 @@ ol {
 .navigation-link {
   position: relative;
   width: auto;
-  padding: 20px 18px;
+  padding: 19px 18px;
   display: block;
   line-height: 26px;
   font-size: 20px;
@@ -320,7 +320,12 @@ ol {
 .navigation-link:hover {
   opacity: 60%;
 }
-
+.navigation-link:focus {
+  opacity: 30%;
+}
+.navigation-link:active {
+  opacity: 30% ;
+}
 .navigation-logo {
   margin-left: 70px;
   width: 139px;
@@ -370,6 +375,12 @@ ol {
 .navigation-link-search:hover {
   opacity: 60%;
 }
+.navigation-link-search:focus {
+  opacity: 30%;
+}
+.navigation-link-search:active {
+  opacity: 30%;
+}
 
 .navigation-item-like {
   margin-right: 33px;
@@ -400,7 +411,7 @@ ol {
 
 .counter-likes {
   position: absolute;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   left: 13px;
@@ -422,6 +433,12 @@ ol {
 
 .navigation-link-like:hover {
   opacity: 60%;
+}
+.navigation-link-like:active {
+  opacity: 30%;
+}
+.navigation-link-like:focus {
+  opacity: 30%;
 }
 
 .index-background {
@@ -667,11 +684,14 @@ ol {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
+.submit-button:disabled {
+  opacity: 60%;
+}
 
 .submit-input {
   width: 574px;
   height: 60px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -684,7 +704,15 @@ ol {
 
 
 }
-
+.submit-input:hover {
+  background-color: #E6E6E6;
+}
+.submit-input:focus {
+ opacity: 90%;
+}
+.submit-input:active {
+  background-color: #F2F2F2;
+}
 .social-link>svg {
   fill: #83B3D3;
 }
@@ -720,30 +748,37 @@ ol {
 .footer-number-button {
   margin-left: 226px;
   margin-right: 70px;
-  margin-top: 50px;
+  margin-top: 46px;
+  color:#000000;
+  text-decoration: none;
+}
+.footer-number {
+font-family: "PT Sans", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-decoration: none;
 }
 
-.footer-number-button>svg {
-  fill: #000000;
+
+.footer-number:hover{
+  color: #756157;
 }
 
-.footer-number-button:hover>svg {
-  fill: #756157;
+.footer-number:focus {
+  color: #756157;
 }
 
-.footer-number-button:focus>svg {
-  fill: #756157;
-}
-
-.footer-number-button:active>svg {
-  fill: rgba(117, 97, 87, 0.3);
+.footer-number:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 
 
 .footer-logo-button {
-  margin-top: 49px;
-  margin-left: 170px;
+  margin-top: 50px;
+  margin-left: 166px;
   width: 115px;
 }
 
@@ -1019,7 +1054,7 @@ ol {
 
 .catalog-input-value {
   appearance: textfield;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1077,7 +1112,8 @@ ol {
 }
 
 .catalog-input-value:focus {
-  box-shadow: 0px 0px 0px 3px #81B3D2;
+  box-shadow: 0px 0px 0px 2px #81B3D2;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .catalog-input-value:active {
@@ -1146,7 +1182,7 @@ ol {
 }
 
 .catalog-filter-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1172,6 +1208,7 @@ ol {
 
 .catalog-filter-reset:active {
   opacity: 30%;
+  border: transparent;
 
 }
 
@@ -1180,7 +1217,7 @@ ol {
   min-width: 290px;
   max-height: 50px;
   padding-left: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1256,7 +1293,7 @@ ol {
 }
 
 .raiting-volume {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1305,7 +1342,6 @@ ol {
   margin-left: 8px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  ;
   box-sizing: border-box;
   padding: 13px 13px;
   width: 48px;
@@ -1584,14 +1620,14 @@ ol {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute ;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  padding: 0 ;
+  border: 0 ;
+  height: 1px ;
+  width: 1px ;
   overflow: hidden;
 }
 
@@ -1670,7 +1706,7 @@ ol {
 }
 
 .modal-title {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1681,7 +1717,7 @@ ol {
 }
 
 .check-title {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1707,7 +1743,7 @@ ol {
   border: transparent;
   padding: 14px 19px;
   margin-left: 36px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1730,7 +1766,7 @@ ol {
 
 .check-in-out-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1778,7 +1814,7 @@ ol {
   /* display:none; */
   margin-top: 0;
   margin-bottom: 11px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1802,7 +1838,7 @@ ol {
   /* display: none; */
   margin-bottom: 11px;
   margin-top: 0;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1991,7 +2027,7 @@ ol {
 
 .check-count-input::placeholder {
   color: #000000;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2001,7 +2037,7 @@ ol {
 
 .check-title-child {
   margin-left: 24px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2020,7 +2056,7 @@ ol {
 
 .check-count-input-child::placeholder {
   color: #000000;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2033,7 +2069,7 @@ ol {
   background: #83B3D3;
   border-radius: 10px;
   border: transparent;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2091,7 +2127,7 @@ ol {
   padding-left: 20px;
   padding-right: 18px;
   padding-bottom: 18px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
