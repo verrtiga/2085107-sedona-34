@@ -350,6 +350,7 @@ body {
 .navigation-item-button {
   margin-top: 15px;
   margin-left: 28px;
+  margin-bottom:10px;
 }
 
 .navigation-user {
@@ -402,9 +403,8 @@ body {
 }
 
 .navigation-link-button {
-  min-width: 160px;
-  padding: 8px 0px;
-
+  max-width: 160px;
+  padding: 9px 34px;
 
 }
 
@@ -1609,14 +1609,14 @@ body {
 }
 
 .catalog-select-bottom {
+  min-width: 160px;
+  min-height: 50px;
   grid-column: 2/3;
-  width: 160px;
-  height: 50px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 20px;
+  padding-left: 22px;
   color: #333333;
   border: 2px solid #e5e5e5;
   -webkit-appearance: none;
